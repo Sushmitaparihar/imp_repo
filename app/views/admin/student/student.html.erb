@@ -1,0 +1,11 @@
+<h1> import csv </h1>
+<%= form_for :dump, :url=>{:action=>"import_csv"}, :html => { :multipart => true } do |f|%>
+       <!--  #<#%label{for= "dumb_file"}%> -->
+          <%"Select a CSV File:" %>
+          <%=f.file_field :file %>
+          <%= submit_tag 'Submit' %>
+
+<% end %>
+
+
+
